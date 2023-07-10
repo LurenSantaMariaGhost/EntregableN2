@@ -1,0 +1,125 @@
+//VARIABLES DE COLORES
+$color-principal: #3f3f3f;
+$color-secundario: #fafbfb;
+$main-color: black;
+$crimson-color: crimson;
+$white-smoke-color: whitesmoke;
+$size: 18px;
+
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.atras{
+    background-image: url("/img/shu.avif");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    animation-name: lluvia;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes lluvia {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -40% -100%;
+    }
+}
+
+#menu li > a {
+    font-size: $size;
+    font-weight: bold;
+    color: $color-principal;
+}
+
+#menu form > button
+{
+    font-size: $size;
+    font-weight: bold;
+}
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+@media (max-width:768px) {
+    #intro {
+        width:90% !important;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+    #bg-contacto{
+        top:-110px;
+    }
+}
+
+@media (max-width: 576px) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+#bg-contacto{
+    position:relative;
+    top:-130px;
+}
+
+
+#contenedor-formulario{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color-secundario;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+#titulo-formulario{
+    color:$color-principal;
+}
+
+footer{
+    background: $main-color;
+    min-height: 100px;
+}
+
+footer p{
+    color: $color-secundario;
+    text-align: center;
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: $color-secundario;
+}
+
+#subir_arriba{
+width: 55px;
+height: 55px;
+background: $crimson-color;
+color: $white-smoke-color;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+position:fixed;
+bottom: 20px;
+cursor: pointer;
+display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}

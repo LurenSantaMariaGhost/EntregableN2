@@ -1,0 +1,77 @@
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#menu li > a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f
+}
+
+#menu form > button
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.carousel-inner{
+    max-height: 39rem;
+}
+
+@media (max-width:768px) {
+    #intro {
+        width:90% !important;
+    }
+    .servicio-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+    #bg-contacto{
+        top:-110px;
+    }
+}
+
+@media (max-width: 576px) {
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+#bg-contacto{
+    position:relative;
+    top:-130px;
+}
+
+
+#contenedor-formulario{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fafbfb;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+#titulo-formulario{
+    color:#3f3f3f;
+}
+
+footer{
+    background: black;
+    min-height: 100px;
+}
+
+footer p{
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos i{
+    font-size: 26px;
+    padding: 0 8px;
+    color: #f3f3f3;
+}
